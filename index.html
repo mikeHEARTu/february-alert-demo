@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="streamCanvas">
+		<div class="mySlides">
+			<div class="myNotification">
+				<span class="alertText">New Follower</span>
+				<span class="alertText alertUsername">Longest_username01</span>
+			</div>
+
+			<div class="myOnscreen">
+				<div class="onscreenText onscreen3">Enjoying the show?</div>
+				<div class="onscreenText onscreen2">-</div>
+				<div class="onscreenText">Follow the stream!</div>
+				<div class="onscreenPic" style="background-image:url(img/twitch-logo.jpg);"></div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="myNotification">
+				<span class="alertText cheer1000bg">cheer x 1000</span>
+				<span class="alertText alertUsername">Longest_username01</span>
+			</div>
+
+			<div class="myOnscreen">
+				<div class="onscreenText onscreen5">#AD</div>
+				<div class="onscreenText onscreen4">-</div>	
+				<div class="onscreenText onscreen3">Final Fantasy XIV</div>
+				<div class="onscreenText onscreen2">-</div>
+				<div class="onscreenText">Ultros</div>
+				<div class="onscreenPic" style="background-image:url(img/ffxiv-logo.jpg);"></div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="myNotification">
+				<span class="alertText cheer5000bg">cheer x 5000</span>
+				<span class="alertText alertUsername">Longest_username01</span>
+			</div>
+
+			<div class="myOnscreen">
+				<div class="onscreenText onscreen3">Music for streamers</div>
+				<div class="onscreenText onscreen2">-</div>
+				<div class="onscreenText">!pretzel</div>
+				<div class="onscreenPic" style="background-image:url(img/pretzel-logo.jpg);"></div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="myNotification">
+				<span class="alertText cheer10000bg">cheer x 10000</span>
+				<span class="alertText alertUsername">Longest_username01</span>
+			</div>
+
+			<div class="myOnscreen">
+				<div class="onscreenPic onscreenLogo"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > x.length) { slideIndex = 1 }
+			x[slideIndex - 1].style.display = "block";
+			setTimeout(carousel, 5000); // Change image every 5 seconds
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body
+{
+	color:white;
+	background: black;
+	text-transform: uppercase;
+}
+#streamCanvas
+{
+	position: absolute;
+	width: 1920px;
+	height:1080px;
+	top: 0;
+	left: 0;
+	overflow:hidden;
+	background-image: url("../img/kingdom-come-screenshot.jpg");
+	background-size:cover;
+	background-position: center center;
+}
+.mySlides
+{
+	margin:10px;
+	animation-name:slideIn;
+    animation-duration:1s;
+}
+.alertText 
+{
+	display: inline-block;
+	font-family: Lato, Helvetica, Calibri, sans-serif;
+	font-size: 36px;
+	font-weight: bolder;
+	background:	linear-gradient(135deg,#935ff0,#6441a4);
+	line-height: 60px;
+	padding: 0 15px;
+	margin-right: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	overflow: hidden;
+	animation-name:notificationIn;
+	transition-timing-function: ease-in-out;
+	animation-duration:1s;
+}
+.alertUsername
+{
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+.cheer1bg
+{
+	background:	linear-gradient(135deg,#AE8FD7,#cbc8cf);
+}
+.cheer100bg
+{
+	background:	linear-gradient(135deg,#EBC8FC,#D27CFB);
+}
+.cheer1000bg
+{
+	background:	linear-gradient(135deg,#84DDC8,#40D6B3);
+}
+.cheer5000bg
+{
+	background:	linear-gradient(135deg,#91CFFF,#45AEFF);
+}
+.cheer10000bg
+{
+	background:	linear-gradient(135deg,#FF726E,#FF2722);
+}
+.myOnscreen
+{
+	position: absolute;
+	right: 10px;
+	top:10px;
+	font-family: Lato, Helvetica, Calibri, sans-serif;
+	font-size: 36px;
+	font-weight: bolder;
+	text-align: right;
+	height: 80px;
+	line-height: 80px;
+	display: flex;
+	justify-content: center;
+}
+.onscreenPic
+{
+	display: inline-block;
+	background: black;
+	background:	linear-gradient(135deg,#935ff0,#6441a4);
+	width: 80px;
+	height: 80px;
+	margin-left:10px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	background-image: url("../img/profilepic.jpg");
+	background-size:cover;
+	background-position: center center;
+	animation-name:profilepicIn;
+	transition-timing-function: ease-in-out;
+	animation-duration:1s;
+}
+.onscreenText
+{
+	margin-left:10px;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	animation-name:onscreentextIn;
+	transition-timing-function: ease-in-out;
+	animation-duration:1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+.onscreen2
+{
+	animation-delay: 0.75s;
+}
+.onscreen3
+{
+	animation-delay: 1s;
+}
+.onscreen4
+{
+	animation-delay: 1.25s;
+}
+.onscreen5
+{
+	animation-delay: 1.5s;
+}
+.onscreenLogo
+{
+	box-shadow: 5px 5px 5px rgba(0,0,0,0);
+	border-radius: 0;
+	background:  rgba(0,0,0,0);
+	background-image: url("../img/logo.png");
+	background-size:contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+}
+
+@keyframes slideIn
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+
+@keyframes notificationIn
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateX(100px);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+
+@keyframes profilepicIn
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateY(-50px);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+
+}
+
+@keyframes onscreentextIn
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateX(-100px);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+
+}
