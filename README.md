@@ -1,5 +1,5 @@
 # February Alert Demo
-Here's the current alert and announcement style I'm using on Twitch. You can find it live over at [Twitch.tv/aznmike123](https://www.twitch.tv/aznmike123/)
+Here's the current alert and announcement style I'm using on Twitch. This file includes the annimations for both but would be powered separately via Muxy.io. You can find it live over at [Twitch.tv/aznmike123](https://www.twitch.tv/aznmike123/)
 
 ## Image sourcing
 - Kingdom Come: Deliverance screenshot - [Steam](http://store.steampowered.com/app/379430/Kingdom_Come_Deliverance/)
